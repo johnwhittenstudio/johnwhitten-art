@@ -1,3 +1,7 @@
+/* .navbar {
+  display: none;
+} */
+
 .LandingPage {
   margin: 0;
   height: 100vh;
@@ -9,16 +13,13 @@
   z-index: 1;
 }
 
-/* .navbar {
-  display: none;
-} */
-
 .LandingPage header {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+
 }
 
 .LandingPage h1 {
@@ -39,19 +40,20 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  
 }
 
 .LandingPage button {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   border-radius: 50px;
-  height: 90px;
+  height: 100px;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   color: white;
   padding: 15px 20px;
   text-transform: uppercase;
   margin-bottom: 80px;
-  font-size: .8em;
+  font-size: 1em;
   letter-spacing: .15em;
   font-weight: 500;
   cursor: pointer;

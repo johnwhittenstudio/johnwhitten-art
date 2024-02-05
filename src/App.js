@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar';
+// import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/pages/Home/Home'
 import LandingPage from './components/pages/LandingPage/LandingPage'
+import Home from './components/pages/Home/Home'
 import Drawings from './components/pages/Drawings/Drawings'
 import Videos from './components/pages/Videos/Videos'
 import Photos from './components/pages/Photos/Photos'
@@ -12,6 +13,11 @@ import About from './components/pages/About/About'
 function App() {
   return (
     <Router>
+    {/* <Location> 
+      {({ location }) => { 
+          if (location.pathname !== "/") { return <Navbar/>; } }
+      } 
+    </Location> */}
       <Navbar />
       <Routes>
         <Route exact path='/' element={<LandingPage/>} />
