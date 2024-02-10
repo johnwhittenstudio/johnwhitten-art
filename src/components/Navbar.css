@@ -45,8 +45,9 @@
 }
 
 .nav-links:hover {
-  background-color: #1888ff;
-  border-radius: 4px;
+  /* background-color: #1888ff; */
+  color: #8AC6D0;
+  /* border-radius: 4px; */
   transition: all 0.2s ease-out;
 }
 

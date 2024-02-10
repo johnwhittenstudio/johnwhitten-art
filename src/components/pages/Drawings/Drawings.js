@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function Drawings() {
+function Drawings({ image, title, description, size, year, className }) {
   return (
-    <>
-      <h1 className='drawings'>Consulting</h1>
-    </>
+    <div>
+      <img src={image} alt={title} className={className} />
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p>{size}</p>
+      <p>{year}</p>
+    </div>
   );
 }
+
+export default Drawings;

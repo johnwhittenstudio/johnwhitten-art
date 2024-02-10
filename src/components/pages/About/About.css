@@ -1,55 +1,85 @@
+.AboutContainer {
+  margin: 0;
+  padding: 0;
+}
+
 .About {
   position: absolute;
   overflow-y: hidden;
   margin: 0;
   padding: 0;
   height: 880px;
-  width: 100vw;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+
+.About .Image .Bio {
+  margin: 0px 5px 20px 100px;
+  width: 600px;
+  z-index: 1;
+  border: 2px solid #2A446C;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.About .Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 0px 100px 20px 50px; */
+  width: 900px;
+  z-index: 1;
+}
+
 .About .Text p {
-  color: #389196;
+  color: #2A446C;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 1.05rem;
   /* font-weight:500; */
-  width: 100%;
-  margin: 10px 0px 30px 0px;
+  /* width: 50%; */
+  margin: 0px 100px 20px 50px;
 }
 
-.About .Text .Bio {
-  margin: 155px 5px 20px 5px;
-  width: 800px;
-  z-index: 1;
-}
 
 .About .AboutIcons {
-  width: 30%;
-  color:#389196;
+  width: 450px;
+  color:#2A446C;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
-  margin-bottom: 10%;
+  margin: 20px 100px 20px 50px;
 }
 
-.About .AboutIcons svg path {
+.About .AboutIcon:hover {
+  color:#8AC6D0;
+}
+
+#resume {
+  left: 0;
+  top: 0;
+  margin: 15px 50px;
+  justify-content: left;
+}
+
+/* .About .AboutIcons svg path {
   cursor: pointer;
-}
+} */
 
-.About .AboutIcons svg path:hover {
-  /* border-bottom: 5px solid #c5d248; */
+/* .About .AboutIcons svg path:hover {
+  border-bottom: 5px solid #c5d248;
   color: #E47946;
-}
+} */
 
-.About .AboutIcons svg path:active {
+/* .About .AboutIcons svg path:active {
   color: #E47946;
-}
+} */
 
 
 
