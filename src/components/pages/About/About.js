@@ -1,7 +1,7 @@
 // import { FaYoutube, FaInstagramSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 // import { GrMail } from "react-icons/gr";
-import bio from '../../../images/bio.JPG'
-// import NavBar from "../../Navbar"
+// import bio from '../../../images/bio.JPG'
+import NavBar from "../../Navbar"
 import './About.css'
 
 const handleURL = (url) => {
@@ -11,10 +11,10 @@ const handleURL = (url) => {
 const About = () => {
   return ( 
     <div className='AboutContainer'>
-        {/* <NavBar /> */}
+        <NavBar />
       <div className='About' id="about">
         <div className='Text' >
-          <img className='Bio' src={bio} alt="me"></img>
+          {/* <img className='Bio' src={bio} alt="me"></img> */}
           <p>please get in touch</p>
         </div>
         <div className='AboutIcons'>
